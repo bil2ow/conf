@@ -2,6 +2,7 @@
 # VERSION: 3.0
 SETUVAR --export EDITOR:nano
 SETUVAR --export HTTPS_PROXY:http\x3a//10\x2e177\x2e3\x2e246\x3a1080
+SETUVAR --export HTTP_PROXY:http\x3a//10\x2e177\x2e3\x2e246
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d

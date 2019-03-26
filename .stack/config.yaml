@@ -1,0 +1,6 @@
+urls:
+  latest-snapshot: http://mirrors.tuna.tsinghua.edu.cn/stackage/snapshots.json
+  nightly-build-plans: http://mirrors.tuna.tsinghua.edu.cn/stackage/stackage-nightly/
+  lts-build-plans: http://mirrors.tuna.tsinghua.edu.cn/stackage/lts-haskell/
+system-ghc: true
+setup-info: http://mirrors.tuna.tsinghua.edu.cn/stackage/stack-setup.yaml

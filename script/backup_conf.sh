@@ -1,6 +1,8 @@
 #!/bin/sh
 
 cd ~
-git commit -am "automatic backup"
-git push
+
+if git commit -am "automatic backup" ; then
+   git push
+fi
 

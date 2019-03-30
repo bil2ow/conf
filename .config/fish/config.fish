@@ -4,7 +4,7 @@ set -x PIPENV_PYPI_MIRROR https://pypi.tuna.tsinghua.edu.cn/simple
 abbr setclip "xclip -selection c"
 abbr getclip "xclip -selection c -o"
 
-alias ec "emacsclient -nw"
+alias ec "emacsclient -c"
 alias paclean "pacman -Qdtq | sudo pacman -Rns -"
 
 alias enable_proxy "set -Ux HTTPS_PROXY http://10.177.3.246:1080;set -Ux HTTP_PROXY  http://10.177.3.246"

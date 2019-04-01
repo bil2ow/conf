@@ -1,6 +1,9 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export EDITOR:nano
+SETUVAR --export LANG:en_US\x2eutf8
+SETUVAR --export LANGUAGE:en_US\x2eutf8
+SETUVAR --export LC_ALL:en_US\x2eutf8
 SETUVAR __fish_classic_git_prompt_initialized:\x1d
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
@@ -35,4 +38,4 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR --export fish_user_paths:/home/billow/\x2egem/ruby/2\x2e6\x2e0/bin/\x1e/home/billow/Android/Sdk/build\x2dtools/28\x2e0\x2e3/\x1e/home/billow/Android/Sdk/platform\x2dtools/\x1e/home/billow/\x2edotnet/tools/\x1e/home/billow/\x2eopam/default/bin/\x1e/home/billow/\x2ecabal/bin
+SETUVAR --export fish_user_paths:/home/billow/\x2egem/ruby/2\x2e6\x2e0/bin/\x1e/home/billow/Android/Sdk/build\x2dtools/28\x2e0\x2e3/\x1e/home/billow/Android/Sdk/platform\x2dtools/\x1e/home/billow/\x2edotnet/tools/\x1e/home/billow/\x2eopam/default/bin/\x1e/home/billow/\x2ecabal/bin\x1e/home/billow/\x2elocal/bin/

@@ -30,7 +30,6 @@
   
   nixpkgs.config.allowUnfree = true;
   
-  nix.maxJobs = 8;
   nix.gc = {
     automatic = true;
     dates = "thursday";
@@ -45,7 +44,7 @@
   networking.networkmanager.ethernet.macAddress = "random";
 
   networking.proxy.default = "http://10.177.3.246:1080/";
-  networking.proxy.noProxy = "127.0.0.1,localhost";
+  networking.proxy.noProxy = "127.0.0.1,localhost,10.*";
 
   i18n = {
     consoleFont = "Lat2-Terminus16";
@@ -68,6 +67,7 @@
     };
     
     fonts = with pkgs; [
+      source-code-pro
       fira-code
       fira-code-symbols
       hack-font
@@ -79,6 +79,7 @@
   time.timeZone = "Asia/Shanghai";
 
   environment.systemPackages = with pkgs; [
+    binutils
     pciutils
     wget
     curl
@@ -95,9 +96,9 @@
   programs.fish.enable = true;
   users.defaultUserShell = pkgs.fish;
   
-  services.emacs.defaultEditor = true;
   services.emacs.enable = true;
-
+  services.hoogle.enable = true;
+  
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
@@ -167,11 +168,9 @@
     nodejs-10_x
     (yarn.override { nodejs = nodejs-10_x; })
     cmake
-    clangStdenv
     clang
     xclip
     hexchat
-    lastpass-cli
     thunderbird
     tdesktop
     ];

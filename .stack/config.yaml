@@ -2,7 +2,7 @@ urls:
   latest-snapshot: https://mirrors.tuna.tsinghua.edu.cn/stackage/snapshots.json
   nightly-build-plans: https://mirrors.tuna.tsinghua.edu.cn/stackage/stackage-nightly/
   lts-build-plans: https://mirrors.tuna.tsinghua.edu.cn/stackage/lts-haskell/
-system-ghc: true
+
 setup-info: https://mirrors.tuna.tsinghua.edu.cn/stackage/stack-setup.yaml
 
 package-indices:

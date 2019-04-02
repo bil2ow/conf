@@ -158,6 +158,7 @@
     jetbrains.pycharm-professional
     jetbrains.clion
     stack
+    haskellPackages.Agda
     fsharp
     fstar
     ocaml
@@ -168,11 +169,13 @@
     nodejs-10_x
     (yarn.override { nodejs = nodejs-10_x; })
     cmake
-    clang
+    gnumake
+    clang_7
     xclip
     hexchat
     thunderbird
     tdesktop
+    rdesktop
     ];
   };
 
@@ -183,6 +186,6 @@
   system.stateVersion = "18.09"; # Did you read the comment?
   system.autoUpgrade = {
     enable = true;
-    channel = "https://nixos.org/channels/nixos-unstable";
+    # channel = "https://nixos.org/channels/nixos-unstable";
   };
 }

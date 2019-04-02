@@ -37,6 +37,7 @@ values."
      fsharp
      ocaml
      haskell
+     agda
      shell-scripts
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
@@ -49,7 +50,6 @@ values."
      better-defaults
      emacs-lisp
      ;; git
-     ;; markdown
      org
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -142,7 +142,7 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Fira Code"
+   dotspacemacs-default-font '("Hack"
                                :size 13
                                :weight normal
                                :width normal

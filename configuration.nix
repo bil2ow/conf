@@ -170,6 +170,8 @@
     (yarn.override { nodejs = nodejs-10_x; })
     cmake
     gnumake
+    gnum4
+    gcc8
     clang_7
     xclip
     hexchat

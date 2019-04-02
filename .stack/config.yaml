@@ -12,5 +12,6 @@ package-indices:
 
 nix:
   enable: true
-  pure: true
-  packages: [glpk, pcre, zlib]
+  pure: false
+  packages: [ zlib ]
+  add-gc-roots: true

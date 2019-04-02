@@ -108,6 +108,7 @@
     gcc8
     clang_7
     cmake
+    wireshark
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -116,7 +117,9 @@
   programs.gnupg.agent = { enable = true; enableSSHSupport = true; };
   programs.fish.enable = true;
   users.defaultUserShell = pkgs.fish;
-  
+
+  programs.wireshark.enable = true;
+
   services.emacs.enable = true;
   services.hoogle.enable = true;
   
@@ -170,7 +173,7 @@
     isNormalUser = true;
     uid = 1000;
     home = "/home/billow";
-    extraGroups = [ "wheel" "networkmanager" "docker" "libvirtd" "kvm" ];
+    extraGroups = [ "wheel" "networkmanager" "docker" "libvirtd" "kvm" "wireshark" ];
     packages = with pkgs; [
     unstable.mathematica
     vscode

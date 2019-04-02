@@ -28,8 +28,19 @@
     fsType = "ext4";
   };
   
-  nixpkgs.config.allowUnfree = true;
-  
+  nixpkgs.config = 
+  {
+      allowUnfree = true;
+    packageOverrides = pkgs: 
+    {
+        unstable = import <nixos-unstable> 
+            { 
+                # pass the nixpkgs config to the unstable alias
+                # to ensure `allowUnfree = true;` is propagated:
+                config = config.nixpkgs.config; 
+            };
+    };
+  };
   nix.gc = {
     automatic = true;
     dates = "thursday";
@@ -83,10 +94,20 @@
     pciutils
     wget
     curl
+    aria2
+    p7zip
+    cloc
+    kdeconnect
     git
     gnupg
     emacs
     firefox
+    chromium
+    gnumake
+    gnum4
+    gcc8
+    clang_7
+    cmake
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -151,6 +172,7 @@
     home = "/home/billow";
     extraGroups = [ "wheel" "networkmanager" "docker" "libvirtd" "kvm" ];
     packages = with pkgs; [
+    unstable.mathematica
     vscode
     android-studio
     apktool
@@ -168,11 +190,6 @@
     (python37Full.withPackages (p: with p; [ setuptools pip pipenv ]))
     nodejs-10_x
     (yarn.override { nodejs = nodejs-10_x; })
-    cmake
-    gnumake
-    gnum4
-    gcc8
-    clang_7
     xclip
     hexchat
     thunderbird

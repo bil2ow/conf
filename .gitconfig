@@ -1,5 +1,6 @@
-[http]
-	proxy = http://10.177.3.246
+[core]
+	sshCommand  = "'C:/Program Files/OpenSSH-Win64/ssh.exe'"
+	autocrlf = true
 [https]
 	proxy = http://10.177.3.246
 [user]
@@ -10,3 +11,8 @@
 	gpgsign = true
 [url "https://github.com/"]
 	insteadOf = git://github.com/
+[difftool "sourcetree"]
+	cmd = '' \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = true

@@ -30,16 +30,16 @@
   
   nixpkgs.config = 
   {
-      allowUnfree = true;
-    packageOverrides = pkgs: 
-    {
-        unstable = import <nixos-unstable> 
-            { 
-                # pass the nixpkgs config to the unstable alias
-                # to ensure `allowUnfree = true;` is propagated:
-                config = config.nixpkgs.config; 
-            };
-    };
+    allowUnfree = true;
+    # packageOverrides = pkgs: 
+    # {
+    #     unstable = import <nixos-unstable> 
+    #         { 
+    #             # pass the nixpkgs config to the unstable alias
+    #             # to ensure `allowUnfree = true;` is propagated:
+    #             config = config.nixpkgs.config; 
+    #         };
+    # };
   };
   nix.gc = {
     automatic = true;
@@ -98,6 +98,7 @@
     p7zip
     cloc
     kdeconnect
+    amarok
     git
     gnupg
     emacs
@@ -175,7 +176,7 @@
     home = "/home/billow";
     extraGroups = [ "wheel" "networkmanager" "docker" "libvirtd" "kvm" "wireshark" ];
     packages = with pkgs; [
-    unstable.mathematica
+    mathematica
     vscode
     android-studio
     apktool
@@ -183,14 +184,14 @@
     jetbrains.pycharm-professional
     jetbrains.clion
     stack
-    haskellPackages.Agda
     fsharp
     fstar
     ocaml
     opam
     openjdk
     gradle
-    (python37Full.withPackages (p: with p; [ setuptools pip pipenv ]))
+    pipenv
+    python3
     nodejs-10_x
     (yarn.override { nodejs = nodejs-10_x; })
     xclip
@@ -205,9 +206,9 @@
   # compatible, in order to avoid breaking some software such as database
   # servers. You should change this only after NixOS release notes say you
   # should.
-  system.stateVersion = "18.09"; # Did you read the comment?
+  system.stateVersion = "19.03"; # Did you read the comment?
   system.autoUpgrade = {
     enable = true;
-    # channel = "https://nixos.org/channels/nixos-unstable";
+    # channel = "https://nixos.org/channels/nixos-19.03";
   };
 }

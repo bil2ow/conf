@@ -9,9 +9,3 @@ package-indices:
   - name: Tsinghua
     download-prefix: http://mirrors.tuna.tsinghua.edu.cn/hackage/package/
     http: http://mirrors.tuna.tsinghua.edu.cn/hackage/00-index.tar.gz
-    
-nix:
-  enable: true
-  pure: false
-  packages: [ zlib ]
-  add-gc-roots: true

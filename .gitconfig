@@ -3,6 +3,8 @@
 	autocrlf = true
 [https]
 	proxy = http://10.177.3.246
+[http]
+	proxy = http://10.177.3.246
 [user]
 	name = billow
 	email = yaagnto@qq.com

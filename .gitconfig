@@ -2,9 +2,9 @@
 	sshCommand  = "'C:/Program Files/OpenSSH-Win64/ssh.exe'"
 	autocrlf = true
 [https]
-	proxy = http://10.177.3.246
+	proxy = http://10.177.3.246:1080
 [http]
-	proxy = http://10.177.3.246
+	proxy = http://10.177.3.246:1080
 [user]
 	name = billow
 	email = yaagnto@qq.com

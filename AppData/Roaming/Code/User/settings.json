@@ -5,4 +5,32 @@
     "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures": true,
     "extensions.ignoreRecommendations": false,
+    "files.autoSave": "onFocusChange",
+
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "build use wsl",
+            "tools": [
+                "wsl-latexmk"
+            ]
+        },
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "wsl-latexmk",
+            "command": "wsl",
+            "args": [
+                "latexmk",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOCFILE%"
+            ],
+            "env": {}
+        },
+    ],
+    "latex-workshop.view.pdf.viewer": "browser",
+    "latex-workshop.view.pdf.ref.viewer": "tabOrBrowser",
+    "liveServer.settings.donotShowInfoMsg": true
 }

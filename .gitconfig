@@ -6,7 +6,7 @@
 	name = billow
 	email = yaagnto@qq.com
 	signingkey = 2A74A5914CA3253D88F19CACDD8A4AB1EE74D95C
-[commit]
-	gpgsign = true
 [url "https://github.com/"]
 	insteadOf = git://github.com/
+[core]
+	gitproxy = socat-proxy.sh

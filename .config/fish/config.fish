@@ -4,8 +4,11 @@ abbr getclip "xclip -selection c -o"
 alias ec "emacsclient -c"
 alias paclean "pacman -Qdtq | sudo pacman -Rns -"
 
-alias enable_proxy "set -Ux HTTPS_PROXY http://10.177.3.246:1080;set -Ux HTTP_PROXY  http://10.177.3.246:1080"
-alias disable_proxy "set -Ue HTTPS_PROXY;set -Ue HTTP_PROXY"
+set http_proxy http://10.177.3.246:1080/
+set -gx https_proxy $http_proxy
+set -gx ftp_proxy $http_proxy
+set -gx rsync_proxy $http_proxy
+set -gx no_proxy "localhost,127.0.0.1,10.*"
 
 # OPAM configuration
 set -gx OCAML_TOPLEVEL_PATH "/home/billow/.opam/system/lib/toplevel";

@@ -1,5 +1,5 @@
 [core]
-	sshCommand  = "'C:/Program Files/OpenSSH-Win64/ssh.exe'"
+	sshCommand  = "'C:/Windows/System32/OpenSSH/ssh.exe'"
 	autocrlf = true
 [https]
 	proxy = http://10.177.3.246:1080

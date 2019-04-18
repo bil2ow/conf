@@ -1,0 +1,37 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/AndroidStudioProjects/flutter_app" />
+      </list>
+    </option>
+    <option name="pid" value="" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/AndroidStudioProjects/flutter_app">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="AI-182.5107.16.33.5314842" />
+              <option name="productionCode" value="AI" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1555505054914" />
+              <option name="buildTimestamp" value="1550274279806" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/source/MyApplication">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="AI-182.5107.16.33.5314842" />
+              <option name="productionCode" value="AI" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1555494653866" />
+              <option name="buildTimestamp" value="1550274277822" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/AndroidStudioProjects" />
+  </component>
+</application>

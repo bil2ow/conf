@@ -31,9 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     html
      markdown
-     yaml
      fsharp
      ocaml
      haskell

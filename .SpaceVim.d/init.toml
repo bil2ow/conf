@@ -11,7 +11,7 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "gruvbox"
+    colorscheme = "dracula"
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
@@ -23,6 +23,8 @@
     buffer_index_type = 4
     enable_tabline_filetype_icon = true
     enable_statusline_mode = false
+    vim_help_language = "cn"
+    guifont = "Fira Code:h11"
 
 # Enable autocomplete layer
 [[layers]]
@@ -37,3 +39,9 @@ default_height = 30
 
 [[layers]]
 name = "lang#latex"
+
+[[layers]]
+name = "chinese"
+
+[[custom_plugins]]
+name = "dracula/vim"

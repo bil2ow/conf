@@ -1,6 +1,0 @@
-{
-    "window.titleBarStyle": "custom",
-    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontLigatures": true,
-    "explorer.confirmDelete": false
-}

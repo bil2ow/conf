@@ -2,5 +2,6 @@
     "editor.fontLigatures": true,
     "window.titleBarStyle": "custom",
     "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "files.autoSave": "onFocusChange"
 }

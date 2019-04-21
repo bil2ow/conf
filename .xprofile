@@ -10,7 +10,7 @@ emacs --daemon
 http_proxy=http://10.177.3.246:1080/
 export https_proxy=$http_proxy
 export rsync_proxy=$http_proxy
-export no_proxy="localhost,127.0.0.1,10.*,172.30.1.111"
+export no_proxy="localhost,127.0.0.1,10.*,172.30.1.111,*.tuna.tsinghua.edu.cn"
 
 # OPAM configuration
 export OCAML_TOPLEVEL_PATH="/home/billow/.opam/system/lib/toplevel"

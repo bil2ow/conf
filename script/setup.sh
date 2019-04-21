@@ -2,7 +2,7 @@
 
 sudo pacman -Syyu
 sudo pacman -S --noconfirm --needed base-devel \
-     rsync mercurial aria2 \
+     rsync git mercurial aria2 \
      deepin deepin-screenshot deepin-terminal networkmanager \
      ibus ibus-libpinyin xclip \
      ttf-fira-code adobe-source-han-sans-cn-fonts \

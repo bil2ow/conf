@@ -5,7 +5,6 @@ ibus-daemon -drx
 
 export LANG=en_US.UTF-8
 export LC_CTYPE=zh_CN.UTF-8
-emacs --daemon
 
 http_proxy=http://10.177.3.246:1080/
 export https_proxy=$http_proxy

@@ -3,5 +3,7 @@
     "window.titleBarStyle": "custom",
     "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "explorer.confirmDelete": false,
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnPaste": true,
+    "explorer.confirmDragAndDrop": false
 }

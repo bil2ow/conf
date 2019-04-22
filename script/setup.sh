@@ -44,7 +44,6 @@ pacman -S --noconfirm --needed \
      racket
 
 systemctl enable NetworkManager
-systemctl enable optimus-manager
 systemctl enable lightdm
 
 # Initramfs
@@ -97,5 +96,6 @@ systemctl --user enable emacs
 curl -sLf https://spacevim.org/cn/install.sh | bash
 '
 
+systemctl enable optimus-manager
 systemctl start optimus-manager
 optimus-manager --set-startup nvidia

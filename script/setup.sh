@@ -8,8 +8,7 @@ hwclock --systohc
 # sync time with windows
 timedatectl set-local-rtc 1
 
-echo  'en_US.UTF-8 UTF-8
-zh_CN.UTF-8 UTF-8' | tee /etc/locale.conf
+sed -i.bak 's/^\(#\s*\(en_US|zh_CN\).UTF-8\sUTF-8\)/\1/' /etc/locale.gen
 locale-gen
 
 echo 'White-Rabbit' | tee /etc/hostname
@@ -28,7 +27,7 @@ pacman -S --noconfirm --needed \
      deepin deepin-screenshot deepin-terminal networkmanager \
      ibus ibus-libpinyin xclip \
      firefox \
-     ttf-fira-code adobe-source-han-sans-cn-fonts \
+     ttf-fira-code ttf-droid ttf-hack adobe-source-han-sans-cn-fonts adobe-source-code-pro-fonts\
      vim emacs code \
      aspell aspell-en \
      vulkan-devel cmake\

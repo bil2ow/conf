@@ -10,6 +10,7 @@ timedatectl set-local-rtc 1
 
 echo  'en_US.UTF-8 UTF-8
 zh_CN.UTF-8 UTF-8' | tee /etc/locale.conf
+
 locale-gen
 
 echo 'White-Rabbit' | tee /etc/hostname
@@ -55,8 +56,10 @@ echo 'GRUB_DEFAULT=saved
 GRUB_SAVEDEFAULT=true' | tee -a /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 
+# sudo
+sed -i.bak 's/^#\s*\(%wheel ALL=(ALL) ALL\)/\1/' /etc/sudoers
 
-# user a nonroot user
+# use a nonroot user
 echo "Enter username to use:"
 read username
 echo "Enter password:"
@@ -72,7 +75,6 @@ mkdir -p "$userHome/tmp"
 chown -hR $username:$username $userHome
 
 su $username -c '
-
 # conf = dotfile
 git clone https://github.com/bil2ow/conf.git ~/tmp/conf
 cp -r ~/tmp/conf/{.,?}* ~/ 2> /dev/null 
@@ -83,10 +85,8 @@ cd ~/tmp/yay && makepkg -si --needed --noconfirm
 
 rm -rf ~/tmp
 
-
 yay -S --nocleanmenu --norebuild --noredownload --notimeupdate --pgpfetch --noremovemake\
      optimus-manager jetbrains-toolbox
-
 
 # spacemacs
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d

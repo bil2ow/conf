@@ -26,7 +26,8 @@ pacman -S --noconfirm --needed \
      rsync git mercurial aria2 \
      deepin deepin-screenshot deepin-terminal networkmanager \
      ibus ibus-libpinyin xclip \
-     firefox \
+     firefox chromium\
+     thunderbird \
      ttf-fira-code ttf-droid ttf-hack adobe-source-han-sans-cn-fonts adobe-source-code-pro-fonts\
      vim emacs code \
      aspell aspell-en \
@@ -40,6 +41,8 @@ pacman -S --noconfirm --needed \
      stack \
      smlnj \
      racket
+     
+chsh -s /usr/bin/fish
 
 systemctl enable NetworkManager
 systemctl enable lightdm

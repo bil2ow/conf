@@ -1,3 +1,4 @@
 {
-    "registry":"https://registry.npm.taobao.org"
+    "proxy": "http://10.177.3.246:1080",
+    "https-proxy": "http://10.177.3.246:1080"
 }

@@ -27,7 +27,7 @@ pacman -S --noconfirm --needed \
      opam \
      agda \
      stack \
-     smlnj \
+     # smlnj \
      racket \
      go
      

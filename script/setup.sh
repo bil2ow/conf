@@ -10,7 +10,7 @@ pacman -Syu
 pacman -S --noconfirm --needed \
      base-devel \
      os-prober grub efibootmgr \
-     etckeeper ntfs-3g screenfetch \
+     ntfs-3g screenfetch \
      nvidia \
      rsync git mercurial aria2 \
      deepin deepin-screenshot deepin-terminal file-roller networkmanager \
@@ -28,10 +28,12 @@ pacman -S --noconfirm --needed \
      agda \
      stack \
      smlnj \
-     racket
+     racket \
+     go
      
 systemctl enable NetworkManager
 systemctl enable lightdm
+systemctl enable rsync
 
 # Initramfs
 mkinitcpio -p linux

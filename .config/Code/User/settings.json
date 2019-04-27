@@ -6,5 +6,6 @@
     "files.autoSave": "onFocusChange",
     "editor.formatOnPaste": true,
     "explorer.confirmDragAndDrop": false,
-    "breadcrumbs.enabled": true
+    "breadcrumbs.enabled": true,
+    "workbench.colorTheme": "Dracula"
 }

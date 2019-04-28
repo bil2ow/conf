@@ -33,5 +33,5 @@
 ;;(set-frame-parameter nil 'undecorated t)
 (xclip-mode 1)
 
-(add-to-list 'default-frame-alist '(height . 60))
+(add-to-list 'default-frame-alist '(height . 50))
 (add-to-list 'default-frame-alist '(width . 100))

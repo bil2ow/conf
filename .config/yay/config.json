@@ -1,10 +1,10 @@
 {
 	"aururl": "https://aur.tuna.tsinghua.edu.cn",
 	"buildDir": "$HOME/.cache/yay",
-	"editor": "",
+	"editor": "emacs",
 	"editorflags": "",
 	"makepkgbin": "makepkg",
-	"makepkgconf": "",
+	"makepkgconf": "/etc/makepkg.conf",
 	"pacmanbin": "pacman",
 	"pacmanconf": "/etc/pacman.conf",
 	"tarbin": "bsdtar",
@@ -32,8 +32,8 @@
 	"provides": true,
 	"pgpfetch": true,
 	"upgrademenu": true,
-	"cleanmenu": true,
-	"diffmenu": true,
+	"cleanmenu": false,
+	"diffmenu": false,
 	"editmenu": false,
 	"combinedupgrade": false,
 	"useask": false

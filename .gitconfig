@@ -1,7 +1,7 @@
 [http]
 	proxy = http://10.177.3.246:1080
 [https]
-	proxy = http://10.177.3.246:1080
+	proxy = socks5://10.177.3.246:1080
 [user]
 	name = billow
 	email = yaagnto@qq.com

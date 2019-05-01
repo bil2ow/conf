@@ -8,12 +8,6 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-http_proxy=http://10.177.3.246:1080/
-export all_proxy=$http_proxy
-export https_proxy=$http_proxy
-export http_proxy=$http_proxy
-export rsync_proxy=$http_proxy
-export no_proxy="localhost,127.0.0.1,10.*,172.30.1.111,*..cn"
 
 # OPAM configuration
 export OCAML_TOPLEVEL_PATH="/home/billow/.opam/system/lib/toplevel"

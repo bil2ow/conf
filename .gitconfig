@@ -9,5 +9,4 @@
 [url "https://github.com/"]
 	insteadOf = git://github.com/
 [hub]
-	username = bil2ow
-	oauthtoken = a979395120a069c5578b1b936ab8072bcf052e10
+	protocol = https

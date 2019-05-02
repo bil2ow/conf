@@ -1,5 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export BROWSER:firefox
+SETUVAR --export PYSIDE2_LIBRARY_DIR:/usr/lib/cmake/PySide2\x2d5\x2e12\x2e3/
+SETUVAR --export --path PYSIDE2_PYTHON_PATH:/usr/lib/python3\x2e7/site\x2dpackages/PySide2/
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d

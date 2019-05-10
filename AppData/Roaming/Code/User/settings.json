@@ -32,5 +32,8 @@
     ],
     "latex-workshop.view.pdf.viewer": "browser",
     "latex-workshop.view.pdf.ref.viewer": "tabOrBrowser",
-    "liveServer.settings.donotShowInfoMsg": true
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.colorTheme": "Dracula",
+    "files.autoGuessEncoding": true,
+    "editor.fontSize": 13
 }

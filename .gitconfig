@@ -2,12 +2,12 @@
 	sshCommand  = "'C:/Windows/System32/OpenSSH/ssh.exe'"
 	autocrlf = true
 [https]
-	proxy = http://10.177.3.246:1080
+	proxy = socks5://127.0.0.1:1080
 [http]
-	proxy = http://10.177.3.246:1080
+	proxy = http://127.0.0.1:1080
 [user]
 	name = billow
-	email = yaagnto@qq.com
+	email = i@billow.fun
 	signingkey = 2A74A5914CA3253D88F19CACDD8A4AB1EE74D95C
 [commit]
 	gpgsign = true
@@ -20,3 +20,8 @@
 	trustExitCode = true
 [winUpdater]
 	recentlySeenVersion = 2.21.0.windows.1
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f

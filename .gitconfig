@@ -4,7 +4,8 @@
 [https]
 	proxy = socks5://127.0.0.1:1080
 [http]
-	proxy = http://127.0.0.1:1080
+	proxy = http://localhost:1080
+
 [user]
 	name = billow
 	email = i@billow.fun

@@ -1,12 +1,16 @@
 [http]
-	proxy = http://10.177.3.246:1080
+	proxy = http://localhost:1080
 [https]
-	proxy = socks5://10.177.3.246:1080
+	proxy = socks5://localhost:1080
 [user]
-	name = billow
-	email = yaagnto@qq.com
+	name = The Colour Out of Space
+	email = i@billow.fun
 	signingkey = 2A74A5914CA3253D88F19CACDD8A4AB1EE74D95C
 [url "https://github.com/"]
 	insteadOf = git://github.com/
+[url "https://gitlab.com/"]
+	insteadOf = git://gitlab.com/
 [hub]
 	protocol = git
+[core]
+	autocrlf = input

@@ -1,5 +1,5 @@
 [http]
-	proxy = http://localhost:1080
+	proxy = socks5://localhost:1080
 [https]
 	proxy = socks5://localhost:1080
 [user]

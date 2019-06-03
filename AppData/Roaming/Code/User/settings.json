@@ -2,10 +2,19 @@
     "editor.suggestSelection": "first",
     "explorer.confirmDragAndDrop": false,
     "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 13,
     "editor.fontLigatures": true,
     "extensions.ignoreRecommendations": false,
     "files.autoSave": "onFocusChange",
     "workbench.colorTheme": "Dracula",
     "files.autoGuessEncoding": true,
-    "editor.fontSize": 13
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "typescript.format.enable": true,
+    "editor.formatOnSave": true,
+    "explorer.confirmDelete": false
 }

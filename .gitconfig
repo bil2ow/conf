@@ -11,6 +11,6 @@
 [url "https://gitlab.com/"]
 	insteadOf = git://gitlab.com/
 [hub]
-	protocol = git
+	protocol = https 
 [core]
 	autocrlf = input

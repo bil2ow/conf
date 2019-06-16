@@ -2,9 +2,9 @@
 	sshCommand  = "'C:/Windows/System32/OpenSSH/ssh.exe'"
 	autocrlf = true
 [https]
-	proxy = socks5://localhost:1080
+	proxy = socks5://localhost:7891
 [http]
-	proxy = http://localhost:1080
+	proxy = http://localhost:7890
 
 [user]
 	name = billow

@@ -1,11 +1,8 @@
 [core]
 	sshCommand  = "'C:/Windows/System32/OpenSSH/ssh.exe'"
 	autocrlf = true
-[https]
-	proxy = socks5://localhost:7891
 [http]
-	proxy = http://localhost:7890
-
+	proxy = socks5://127.0.0.1:7891
 [user]
 	name = billow
 	email = i@billow.fun

@@ -1,5 +1,4 @@
 [core]
-	sshCommand  = "'C:/Windows/System32/OpenSSH/ssh.exe'"
 	autocrlf = true
 [http]
 	proxy = socks5://127.0.0.1:7891

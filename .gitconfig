@@ -1,13 +1,11 @@
 [core]
 	autocrlf = true
-[http]
-	proxy = socks5://127.0.0.1:7891
 [user]
 	name = billow
-	email = i@billow.fun
-	signingkey = 2A74A5914CA3253D88F19CACDD8A4AB1EE74D95C
+	email = billow.fun@gmail.com
+	signingkey = 63D61442E8D85CBBE7CA874B55B908D2D8897318
 [commit]
-	gpgsign = true
+	gpgsign = false
 [url "https://github.com/"]
 	insteadOf = git://github.com/
 [difftool "sourcetree"]
@@ -22,3 +20,5 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[http]
+	proxy = http://127.0.0.1:7890

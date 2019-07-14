@@ -3,9 +3,9 @@
 [user]
 	name = billow
 	email = billow.fun@gmail.com
-	signingkey = 63D61442E8D85CBBE7CA874B55B908D2D8897318
+	signingkey = 8A87D7B61C5331554DEB84E441BF13F3E7E9D58E
 [commit]
-	gpgsign = false
+	gpgsign = true
 [url "https://github.com/"]
 	insteadOf = git://github.com/
 [difftool "sourcetree"]

@@ -1,25 +1,27 @@
 {
     "editor.suggestSelection": "first",
     "explorer.confirmDragAndDrop": false,
-    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'Source Code Pro','Fira Code', 'Droid Sans Mono', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "extensions.ignoreRecommendations": false,
     "files.autoSave": "onFocusChange",
     "workbench.colorTheme": "Dracula",
     "files.autoGuessEncoding": true,
-    "[c]": {
-        "editor.defaultFormatter": "xaver.clang-format"
-    },
-    "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format"
-    },
     "typescript.format.enable": true,
     "editor.formatOnSave": true,
     "explorer.confirmDelete": false,
     "git.autofetch": true,
     "liveServer.settings.donotShowInfoMsg": true,
     "window.zoomLevel": 0,
+    "terminal.integrated.shell.linux": "/usr/bin/fish",
+    "C_Cpp.clang_format_sortIncludes": true,
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
     "[javascript]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
@@ -28,5 +30,5 @@
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
-    }
+    },
 }

@@ -1,11 +1,6 @@
-Just run it with root privileges:
-
+conf
 ```
-curl -sLf https://git.io/arch-setup | sh
-```
+git clone https://github.com/iovw/conf.git -b master
+cp -r conf/{.,?}* ~/ 2> /dev/null 
 
-then add a nonroot user, run
-
-```
-curl -sLf https://git.io/arch-setup-user | sh
 ```

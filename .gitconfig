@@ -10,5 +10,5 @@
 	protocol = https 
 [core]
 	autocrlf = input
-[http]
-	proxy = socks5h://127.0.0.1:7891
+# [http]
+	# proxy = socks5h://127.0.0.1:7891

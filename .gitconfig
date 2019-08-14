@@ -1,6 +1,6 @@
 [user]
 	name = The Colour Out of Space
-	email = i@billow.fun
+	email = billow.fun@gmail.com
 	signingkey = 2A74A5914CA3253D88F19CACDD8A4AB1EE74D95C
 [url "https://github.com/"]
 	insteadOf = git://github.com/
@@ -10,5 +10,5 @@
 	protocol = https 
 [core]
 	autocrlf = input
-# [http]
-	# proxy = socks5h://127.0.0.1:7891
+[http]
+	proxy = socks5h://127.0.0.1:7891

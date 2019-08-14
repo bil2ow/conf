@@ -9,5 +9,7 @@
     "explorer.confirmDragAndDrop": false,
     "breadcrumbs.enabled": true,
     "workbench.colorTheme": "Dracula",
-    "files.autoGuessEncoding": true
+    "files.autoGuessEncoding": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120
 }

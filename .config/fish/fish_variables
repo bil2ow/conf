@@ -5,13 +5,11 @@ SETUVAR --export GO111MODULE:on\x0d
 SETUVAR --export GOPROXY:https\x3a//goproxy\x2eio\x0d
 SETUVAR --export PYSIDE2_LIBRARY_DIR:/usr/lib/cmake/PySide2\x2d5\x2e12\x2e3/\x0d
 SETUVAR --export --path PYSIDE2_PYTHON_PATH:/usr/lib/python3\x2e7/site\x2dpackages/PySide2/\x0d
-SETUVAR --export RUSTUP_DIST_SERVER:https\x3a//mirrors\x2eustc\x2eedu\x2ecn/rust\x2dstatic\x0d
-SETUVAR --export RUSTUP_UPDATE_ROOT:https\x3a//mirrors\x2eustc\x2eedu\x2ecn/rust\x2dstatic/rustup\x0d
 SETUVAR __fish_init_2_39_8:\x1d\x0d
 SETUVAR __fish_init_2_3_0:\x1d\x0d
 SETUVAR __fish_init_3_x:\x1d\x0d
-SETUVAR _fish_abbr_getclip:xclip\x20\x2dselection\x20c\x20\x2do\x0d
-SETUVAR _fish_abbr_setclip:xclip\x20\x2dselection\x20c\x0d
+SETUVAR _fish_abbr_getclip:xclip\x20\x2dselection\x20c\x20\x2do
+SETUVAR _fish_abbr_setclip:xclip\x20\x2dselection\x20c
 SETUVAR fish_color_autosuggestion:BD93F9\x0d
 SETUVAR fish_color_cancel:\x2dr\x0d
 SETUVAR fish_color_command:F8F8F2\x0d
@@ -40,4 +38,4 @@ SETUVAR fish_pager_color_completion:normal\x0d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x0d
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline\x0d
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan\x0d
-SETUVAR --export fish_user_paths:/home/billow/\x2eyarn/bin/\x1e/home/billow/\x2elocal/bin\x1e/home/billow/\x2egem/ruby/2\x2e6\x2e0/bin\x1e/home/billow/\x2eopam/default/bin/\x0d
+SETUVAR fish_user_paths:/home/iov/\x2egem/ruby/2\x2e6\x2e0/bin/

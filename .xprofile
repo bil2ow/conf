@@ -8,13 +8,16 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-
-# OPAM configuration
-export OCAML_TOPLEVEL_PATH="/home/billow/.opam/system/lib/toplevel"
-export PERL5LIB="/home/billow/.opam/system/lib/perl5:$PERL5LIB"
-export MANPATH="$MANPATH:/home/billow/.opam/system/man"
-export CAML_LD_LIBRARY_PATH="/home/billow/.opam/system/lib/stublibs"
-
 # Mirror
 export PIPENV_PYPI_MIRROR=https://pypi.tuna.tsinghua.edu.cn/simple
 export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
+
+# Go proxy
+export GO111MODULE=on
+export GOPROXY=https://goproxy.io
+
+# Dart pub
+export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub/"
+
+# Flutter
+export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter"

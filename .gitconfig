@@ -1,5 +1,6 @@
 [core]
-	autocrlf = true
+	autocrlf = input
+	eol = lf
 [user]
 	name = billow
 	email = billow.fun@gmail.com

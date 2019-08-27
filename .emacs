@@ -16,7 +16,7 @@
  '(current-language-environment "UTF-8")
  '(global-display-line-numbers-mode t)
  '(inhibit-startup-screen t)
- '(package-selected-packages (quote (sml-mode)))
+ '(package-selected-packages (quote (pdf-view-restore pdf-tools sml-mode)))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(tool-bar-mode nil)

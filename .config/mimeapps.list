@@ -64,7 +64,7 @@ x-scheme-handler/snews=userapp-Thunderbird-09T00Z.desktop;
 [Default Applications]
 application/epub+zip=sigil.desktop
 application/musepack=netease-cloud-music.desktop
-application/pdf=chromium.desktop
+application/pdf=FoxitReader.desktop
 application/rss+xml=userapp-Thunderbird-UYU10Z.desktop
 application/vnd.ms-publisher=code-oss.desktop;
 application/wps-office.doc=wps-office-wps.desktop
@@ -125,3 +125,4 @@ x-scheme-handler/mailto=userapp-Thunderbird-4Z2W0Z.desktop
 x-scheme-handler/news=userapp-Thunderbird-09T00Z.desktop
 x-scheme-handler/nntp=userapp-Thunderbird-09T00Z.desktop
 x-scheme-handler/snews=userapp-Thunderbird-09T00Z.desktop
+application/ppdf=FoxitReader.desktop

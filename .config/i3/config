@@ -172,7 +172,7 @@ bar {
 }
 
 bindsym $mod+Print exec xfce4-screenshooter
-bindsym Escape kill
+bindsym $mod+Escape kill
 
 default_border none
 default_floating_border none

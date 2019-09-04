@@ -12,5 +12,6 @@
     "files.autoGuessEncoding": true,
     "editor.wordWrap": "wordWrapColumn",
     "git.confirmSync": false,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "html.format.wrapLineLength": null
 }

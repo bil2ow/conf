@@ -56,7 +56,6 @@ x-scheme-handler/feed=userapp-Thunderbird-UYU10Z.desktop;
 x-scheme-handler/ftp=firefox.desktop;chromium.desktop;
 x-scheme-handler/http=chromium.desktop;firefox.desktop;
 x-scheme-handler/https=chromium.desktop;firefox.desktop;
-x-scheme-handler/mailto=userapp-Thunderbird-4Z2W0Z.desktop;
 x-scheme-handler/news=userapp-Thunderbird-09T00Z.desktop;
 x-scheme-handler/nntp=userapp-Thunderbird-09T00Z.desktop;
 x-scheme-handler/snews=userapp-Thunderbird-09T00Z.desktop;
@@ -126,3 +125,4 @@ x-scheme-handler/news=userapp-Thunderbird-09T00Z.desktop
 x-scheme-handler/nntp=userapp-Thunderbird-09T00Z.desktop
 x-scheme-handler/snews=userapp-Thunderbird-09T00Z.desktop
 application/ppdf=FoxitReader.desktop
+

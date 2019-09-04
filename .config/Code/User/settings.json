@@ -11,7 +11,6 @@
     "workbench.colorTheme": "Dracula",
     "files.autoGuessEncoding": true,
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 92,
     "git.confirmSync": false,
     "git.autofetch": true
 }

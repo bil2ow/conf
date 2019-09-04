@@ -29,8 +29,7 @@
 (global-set-key (kbd "<f2>") 'open-dotemacs)
 (global-set-key (kbd "<f3>") 'reload-dotemacs)
 
-(setq default-directory "C:/Users/starr/source/")
 (setq make-backup-files nil)
 (windmove-default-keybindings)
-;; (electric-indent-mode nil)
+(electric-indent-mode nil)
 (global-hl-line-mode t)

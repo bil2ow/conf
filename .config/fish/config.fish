@@ -6,3 +6,5 @@ alias et "emacsclient -t"
 
 alias logout "i3-msg exit"
 alias proxy_off "set -e http_proxy;set -e https_proxy;set -e  ftp_proxy;set -e  all_proxy;set -e  HTTP_PROXY;set -e  HTTPS_PROXY;set -e  FTP_PROXY;set -e  ALL_PROXY"
+
+source /home/iov/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true

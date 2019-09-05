@@ -3,7 +3,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 set $mod Mod4
 font pango:DejaVu Sans Mono 9
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 bindsym Mod4+l exec i3lock
 
@@ -21,7 +21,7 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec rofi -show drun
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
@@ -148,12 +148,10 @@ bar {
 bindsym $mod+Print exec xfce4-screenshooter
 bindsym $mod+Escape kill
 
-default_border none
-default_floating_border none
+default_border 1pixel
+default_floating_border 1pixel
 
 for_window [class="feh|netease-cloud-music"] floating enable, border normal
 for_window [class="telegram-desktop"] floating enable, border normal
 
-exec --no-startup-id ~/.screenlayout/sc2.sh
-exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers
-exec --no-startup-id compton --config ~/.config/compton.conf
+

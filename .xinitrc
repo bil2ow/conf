@@ -21,7 +21,6 @@ fi
 [ -f /etc/xprofile ] && source /etc/xprofile
 [ -f ~/.xprofile ] && source ~/.xprofile
 
-~/.screenlayout/sc2.sh &
-fcitx &
-sleep 0.2 && feh --randomize --bg-fill ~/Pictures/wallpapers &
-exec i3
+# ~/.screenlayout/sc2.sh &
+# sleep 0.2 && feh --randomize --bg-fill ~/Pictures/wallpapers &
+# exec i3

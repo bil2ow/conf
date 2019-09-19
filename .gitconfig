@@ -1,7 +1,7 @@
 [user]
 	name = The Colour Out of Space
 	email = billow.fun@gmail.com
-	signingkey = 2A74A5914CA3253D88F19CACDD8A4AB1EE74D95C
+	signingkey = 6174C79E66C3F8939775BD07640B2328CF13DF28
 #[url "https://github.com/"]
 #	insteadOf = git://github.com/
 #[url "https://gitlab.com/"]

@@ -1,4 +1,3 @@
- 
 {
     "editor.fontLigatures": true,
     "window.titleBarStyle": "custom",
@@ -13,5 +12,11 @@
     "editor.wordWrap": "wordWrapColumn",
     "git.confirmSync": false,
     "git.autofetch": true,
-    "html.format.wrapLineLength": null
+    "editor.fontSize": 13,
+    "editor.renderWhitespace": "boundary",
+    "editor.wordWrapColumn": 120,
+    "editor.formatOnSave": true,
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+    "git.enableCommitSigning": true,
+    "git.enableSmartCommit": true
 }

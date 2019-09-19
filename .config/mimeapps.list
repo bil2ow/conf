@@ -59,6 +59,7 @@ x-scheme-handler/https=chromium.desktop;firefox.desktop;
 x-scheme-handler/news=userapp-Thunderbird-09T00Z.desktop;
 x-scheme-handler/nntp=userapp-Thunderbird-09T00Z.desktop;
 x-scheme-handler/snews=userapp-Thunderbird-09T00Z.desktop;
+text/plain=deepin-editor.desktop;
 
 [Default Applications]
 application/epub+zip=sigil.desktop
@@ -105,7 +106,7 @@ image/x-xbitmap=deepin-image-viewer.desktop
 image/x-xpixmap=deepin-image-viewer.desktop
 message/rfc822=userapp-Thunderbird-4Z2W0Z.desktop
 text/html=firefox.desktop
-text/plain=code-oss.desktop
+text/plain=deepin-editor.desktop
 text/x-c++src=code-oss.desktop
 text/x-csrc=code-oss.desktop
 text/x-java=code-oss.desktop
@@ -125,4 +126,4 @@ x-scheme-handler/news=userapp-Thunderbird-09T00Z.desktop
 x-scheme-handler/nntp=userapp-Thunderbird-09T00Z.desktop
 x-scheme-handler/snews=userapp-Thunderbird-09T00Z.desktop
 application/ppdf=FoxitReader.desktop
-
+application/lrf=calibre-lrfviewer.desktop

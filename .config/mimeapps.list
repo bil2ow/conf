@@ -106,11 +106,11 @@ image/x-xbitmap=deepin-image-viewer.desktop
 image/x-xpixmap=deepin-image-viewer.desktop
 message/rfc822=userapp-Thunderbird-4Z2W0Z.desktop
 text/html=firefox.desktop
-text/plain=deepin-editor.desktop
+text/plain=code-oss.desktop
 text/x-c++src=code-oss.desktop
 text/x-csrc=code-oss.desktop
 text/x-java=code-oss.desktop
-text/x-matlab=typora.desktop
+text/x-matlab=code-oss.desktop
 text/xhtml+xml=firefox.desktop
 text/xhtml_xml=firefox.desktop
 text/xml=firefox.desktop
@@ -125,5 +125,8 @@ x-scheme-handler/mailto=userapp-Thunderbird-4Z2W0Z.desktop
 x-scheme-handler/news=userapp-Thunderbird-09T00Z.desktop
 x-scheme-handler/nntp=userapp-Thunderbird-09T00Z.desktop
 x-scheme-handler/snews=userapp-Thunderbird-09T00Z.desktop
-application/ppdf=FoxitReader.desktop
 application/lrf=calibre-lrfviewer.desktop
+
+[Removed Associations]
+text/x-c++src=rstudio.desktop;
+text/x-c++hdr=rstudio.desktop;

@@ -1,7 +1,7 @@
 [Added Associations]
 application/epub+zip=firefox.desktop;chromium.desktop;sigil.desktop;
 application/musepack=netease-cloud-music.desktop;
-application/pdf=chromium.desktop;
+application/pdf=chromium.desktop;calibre-ebook-viewer.desktop;
 application/rss+xml=userapp-Thunderbird-UYU10Z.desktop;
 application/vnd.ms-publisher=code-oss.desktop;
 application/wps-office.doc=wps-office-wps.desktop;
@@ -64,7 +64,7 @@ text/plain=deepin-editor.desktop;
 [Default Applications]
 application/epub+zip=sigil.desktop
 application/musepack=netease-cloud-music.desktop
-application/pdf=FoxitReader.desktop
+application/pdf=calibre-ebook-viewer.desktop
 application/rss+xml=userapp-Thunderbird-UYU10Z.desktop
 application/vnd.ms-publisher=code-oss.desktop;
 application/wps-office.doc=wps-office-wps.desktop

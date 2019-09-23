@@ -20,8 +20,3 @@ for v in $PROXY_ENV ; do
 done
 
 export no_proxy="localhost,127.0.0.1"
-
-export GTK_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx
-export QT_IM_MODULE=fcitx
-fcitx &

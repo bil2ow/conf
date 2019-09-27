@@ -1,5 +1,5 @@
 [Added Associations]
-application/epub+zip=firefox.desktop;chromium.desktop;sigil.desktop;
+application/epub+zip=calibre-ebook-viewer.desktop;firefox.desktop;chromium.desktop;sigil.desktop;
 application/musepack=netease-cloud-music.desktop;
 application/pdf=chromium.desktop;calibre-ebook-viewer.desktop;
 application/rss+xml=userapp-Thunderbird-UYU10Z.desktop;

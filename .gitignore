@@ -81,4 +81,6 @@ Videos
 .vscode-cpptools
 .vscode-oss
 .wget-hsts
-/home/iov/.bnd/
+.bnd
+.op
+stale_outputs_checked

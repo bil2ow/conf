@@ -27,4 +27,4 @@ for v in $PROXY_ENV
   set -gx $v $proxy
 end
 
-set -gx no_proxy "localhost,127.0.0.1"
+set -gx no_proxy "localhost,127.0.0.1,aur.tuna.tsinghua.edu.cn"

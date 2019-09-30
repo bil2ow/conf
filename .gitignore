@@ -86,3 +86,5 @@ Videos
 stale_outputs_checked
 .npm
 .yarn
+github/
+go

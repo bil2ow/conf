@@ -1,8 +1,8 @@
 [core]
-	autocrlf = input
+	autocrlf = true
 	eol = lf
 [user]
-	name = billow
+	name = iovw
 	email = billow.fun@gmail.com
 	signingkey = 8A87D7B61C5331554DEB84E441BF13F3E7E9D58E
 [commit]

@@ -1,1 +1,9 @@
 :?
+import Numeric.IEEE
+import ieee754
+add ieee754
+browse ieee754
+:?
+open Numeric
+open Numeric.IEEE
+:?

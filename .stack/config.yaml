@@ -20,3 +20,5 @@ package-indices:
 
       # ignore expiration date, see https://github.com/commercialhaskell/stack/pull/4614
       ignore-expiry: no
+
+allow-newer: true

@@ -1,3 +1,9 @@
+*~
+.idris/
+.jupyter/
+.mysql_history
+.chezscheme_history
+sdk
 Calibre Library
 Desktop
 Documents
@@ -91,3 +97,9 @@ go
 .gervill/
 .gitkraken/
 .gnome/
+.ghc
+.hoogle
+.agda
+.msf*
+.zenmap
+MAlonzo

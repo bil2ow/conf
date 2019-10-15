@@ -10,7 +10,7 @@ values."
    ;; Base distribution to use. This is a layer contained in the directory
    ;; `+distribution'. For now available distributions are `spacemacs-base'
    ;; or `spacemacs'. (default 'spacemacs)
-   dotspacemacs-distribution 'spacemacs-base
+   dotspacemacs-distribution 'spacemacs
    ;; Lazy installation of layers (i.e. layers are installed only when a file
    ;; with a supported type is opened). Possible values are `all', `unused'
    ;; and `nil'. `unused' will lazy install only unused layers (i.e. layers
@@ -33,12 +33,14 @@ values."
      agda
      emacs-lisp
      scheme
+     racket
      shell-scripts
      git
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
      (auto-completion :variables
                       auto-completion-enable-sort-by-usage t
-                      auto-completion-enable-snippets-in-popup t)
+                      auto-completion-enable-snippets-in-popup t
+                      auto-completion-enable-help-tooltip t)
      better-defaults
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -46,8 +48,11 @@ values."
      ;;spell-checking
      syntax-checking
      )
-   dotspacemacs-additional-packages '(fstar-mode
-                                      paredit)
+   dotspacemacs-additional-packages '(
+                                      dracula-theme
+                                      fstar-mode
+                                      ;; paredit
+                                      )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
@@ -87,7 +92,7 @@ values."
    ;; If non-nil, a form that evaluates to a package directory. For example, to
    ;; use different package directories for different Emacs versions, set this
    ;; to `emacs-version'.
-   dotspacemacs-elpa-subdirectory nil
+   dotspacemacs-elpa-subdirectory 'nil
    ;; One of `vim', `emacs' or `hybrid'.
    ;; `hybrid' is like `vim' except that `insert state' is replaced by the
    ;; `hybrid state' with `emacs' key bindings. The value can also be a list
@@ -103,7 +108,7 @@ values."
    ;; directory. A string value must be a path to an image format supported
    ;; by your Emacs build.
    ;; If the value is nil then no banner is displayed. (default 'official)
-   dotspacemacs-startup-banner 'official
+   dotspacemacs-startup-banner 'random
    ;; List of items to show in startup buffer or an association list of
    ;; the form `(list-type . list-size)`. If nil then it is disabled.
    ;; Possible values for list-type are:
@@ -119,7 +124,8 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(spacemacs-dark
+   dotspacemacs-themes '(dracula
+                         spacemacs-dark
                          spacemacs-light)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
@@ -218,7 +224,7 @@ values."
    ;; If non nil the frame is maximized when Emacs starts up.
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (default nil) (Emacs 24.4+ only)
-   dotspacemacs-maximized-at-startup nil
+   dotspacemacs-maximized-at-startup t
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's active or selected.
    ;; Transparency can be toggled through `toggle-transparency'. (default 90)
@@ -250,7 +256,7 @@ values."
    ;;                       text-mode
    ;;   :size-limit-kb 1000)
    ;; (default nil)
-   dotspacemacs-line-numbers t
+   dotspacemacs-line-numbers 'relative
    ;; Code folding method. Possible values are `evil' and `origami'.
    ;; (default 'evil)
    dotspacemacs-folding-method 'evil
@@ -295,10 +301,10 @@ before packages are loaded. If you are unsure, you should try in setting them in
         '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
           ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
           ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
-  (set-frame-position (selected-frame) 1000 0)
-  (setq default-frame-alist
-        '((height . 70)
-          (width  . 120)))
+  ;; (set-frame-position (selected-frame) 1000 0)
+  ;; (setq default-frame-alist
+  ;;       '((height . 70)
+  ;;         (width  . 120)))
 )
 
 (defun dotspacemacs/user-config ()
@@ -309,13 +315,14 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (global-company-mode)
-  (autoload 'enable-paredit-mode "paredit"
-    "Turn on pseudo-structural editing of Lisp code."
-    t)
-  (add-hook 'scheme-mode-hook 'enable-paredit-mode)
-  (add-hook 'lisp-mode-hook 'enable-paredit-mode)
-  (add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
-  (setq scheme-program-name "chez-scheme")
+  ;; disable paredit mode
+  ;; (autoload 'enable-paredit-mode "paredit"
+  ;;   "Turn on pseudo-structural editing of Lisp code."
+  ;;   t)
+  ;; (add-hook 'scheme-mode-hook 'enable-paredit-mode)
+  ;; (add-hook 'lisp-mode-hook 'enable-paredit-mode)
+  ;; (add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
+  ;; (setq scheme-program-name "chez-scheme")
   (setq geiser-chez-binary "chez-scheme")
   (setq geiser-active-implementations '(racket))
 )
@@ -330,7 +337,7 @@ you should place your code here."
  '(evil-want-Y-yank-to-eol nil)
  '(package-selected-packages
    (quote
-    (smeargle orgit magit-gitflow magit-popup ibuffer-projectile gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link evil-magit magit transient git-commit paredit flyspell-correct-popup git-gutter-fringe fringe-helper with-editor git-gutter diff-hl geiser vmd-mode stickyfunc-enhance srefactor disaster company-c-headers cmake-mode clang-format nadvice ob-sml sml-mode toml-mode racer f cargo rust-mode lv web-mode tagedit slim-mode scss-mode sass-mode pug-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data mmm-mode markdown-toc markdown-mode gh-md nix-mode hydra projectile helm-nixos-options flx s pkg-info epl evil goto-chg undo-tree dash company-nixos-options nixos-options bind-map bind-key packed helm avy helm-core async popup yaml-mode fstar-mode quick-peek utop tuareg caml ocp-indent merlin fsharp-mode company-quickhelp intero hlint-refactor hindent helm-hoogle haskell-snippets flycheck-haskell company-ghci company-ghc ghc haskell-mode company-cabal cmm-mode insert-shebang fish-mode company-shell org-projectile org-pomodoro alert log4e helm-company helm-c-yasnippet flyspell-correct-helm flycheck-pos-tip pos-tip company-statistics auto-yasnippet ac-ispell unfill org-category-capture org-present gntp org-mime org-download mwim htmlize gnuplot fuzzy flyspell-correct flycheck company yasnippet auto-dictionary auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump diminish define-word column-enforce-mode clean-aindent-mode auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line))))
+    (dracula-theme helm-gitignore powerline spinner parent-mode highlight smartparens iedit anzu racket-mode faceup smeargle orgit magit-gitflow magit-popup ibuffer-projectile gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link evil-magit magit transient git-commit paredit flyspell-correct-popup git-gutter-fringe fringe-helper with-editor git-gutter diff-hl geiser vmd-mode stickyfunc-enhance srefactor disaster company-c-headers cmake-mode clang-format nadvice ob-sml sml-mode toml-mode racer f cargo rust-mode lv web-mode tagedit slim-mode scss-mode sass-mode pug-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data mmm-mode markdown-toc markdown-mode gh-md nix-mode hydra projectile helm-nixos-options flx s pkg-info epl evil goto-chg undo-tree dash company-nixos-options nixos-options bind-map bind-key packed helm avy helm-core async popup yaml-mode fstar-mode quick-peek utop tuareg caml ocp-indent merlin fsharp-mode company-quickhelp intero hlint-refactor hindent helm-hoogle haskell-snippets flycheck-haskell company-ghci company-ghc ghc haskell-mode company-cabal cmm-mode insert-shebang fish-mode company-shell org-projectile org-pomodoro alert log4e helm-company helm-c-yasnippet flyspell-correct-helm flycheck-pos-tip pos-tip company-statistics auto-yasnippet ac-ispell unfill org-category-capture org-present gntp org-mime org-download mwim htmlize gnuplot fuzzy flyspell-correct flycheck company yasnippet auto-dictionary auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump diminish define-word column-enforce-mode clean-aindent-mode auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

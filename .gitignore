@@ -103,3 +103,4 @@ go
 .msf*
 .zenmap
 MAlonzo
+.*_history

@@ -2,10 +2,10 @@
 	name = The Colour Out of Space
 	email = billow.fun@gmail.com
 	signingkey = 6174C79E66C3F8939775BD07640B2328CF13DF28
-#[url "https://github.com/"]
-#	insteadOf = git://github.com/
-#[url "https://gitlab.com/"]
-#	insteadOf = git://gitlab.com/
+[url "https://github.com/"]
+	insteadOf = git://github.com/
+[url "https://gitlab.com/"]
+	insteadOf = git://gitlab.com/
 [hub]
 	protocol = git
 [core]
@@ -15,5 +15,5 @@
     proxy = http://127.0.0.1:7890
 [credential]
 	helper = cache --timeout=604800
-[commit]
-	gpgSign = true
+# [commit]
+# 	gpgSign = true

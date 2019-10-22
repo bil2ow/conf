@@ -104,3 +104,4 @@ go
 .zenmap
 MAlonzo
 .*_history
+.yarnrc

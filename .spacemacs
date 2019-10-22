@@ -36,17 +36,20 @@ values."
      racket
      shell-scripts
      git
+     ;; html
+     ;; (markdown :variables markdown-live-preview-engine 'vmd)
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
      (auto-completion :variables
                       auto-completion-enable-sort-by-usage t
                       auto-completion-enable-snippets-in-popup t
                       auto-completion-enable-help-tooltip t)
      better-defaults
+     syntax-checking
+     ;; spell-checking
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
-     ;;spell-checking
-     syntax-checking
+
      )
    dotspacemacs-additional-packages '(
                                       dracula-theme

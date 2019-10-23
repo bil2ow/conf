@@ -62,7 +62,7 @@ x-scheme-handler/snews=userapp-Thunderbird-09T00Z.desktop;
 text/plain=typora.desktop;deepin-editor.desktop;
 application/json=code-oss.desktop;
 application/xhtml+xml=firefox.desktop;
-text/markdown=code-oss.desktop;
+text/markdown=typora.desktop;code-oss.desktop;
 
 [Default Applications]
 application/epub+zip=sigil.desktop

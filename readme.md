@@ -24,7 +24,7 @@ sudo pacman -S archlinuxcn-keyring blackarch-keyring
 
 ## 其它
 
-### 解决双系统同步
+### 解决双系统时间同步
 
 ```bash
 timedatectl set-local-rtc true

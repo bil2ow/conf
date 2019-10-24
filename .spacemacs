@@ -27,6 +27,7 @@ values."
    dotspacemacs-configuration-layer-path '()
    dotspacemacs-configuration-layers
    '(
+     javascript
      sml
      ocaml
      haskell
@@ -180,7 +181,7 @@ values."
    dotspacemacs-display-default-layout t
    ;; If non nil then the last auto saved layouts are resume automatically upon
    ;; start. (default nil)
-   dotspacemacs-auto-resume-layouts t
+   dotspacemacs-auto-resume-layouts nil
    ;; Size (in MB) above which spacemacs will prompt to open the large file
    ;; literally to avoid performance issues. Opening a file literally means that
    ;; no major mode or minor modes are active. (default is 1)
@@ -227,7 +228,7 @@ values."
    ;; If non nil the frame is maximized when Emacs starts up.
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (default nil) (Emacs 24.4+ only)
-   dotspacemacs-maximized-at-startup t
+   dotspacemacs-maximized-at-startup nil
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's active or selected.
    ;; Transparency can be toggled through `toggle-transparency'. (default 90)
@@ -267,7 +268,7 @@ values."
    ;; (default nil)
    dotspacemacs-smartparens-strict-mode t
    ;; If non-nil pressing the closing parenthesis `)' key in insert mode passes
-   ;; over any automatically added closing parenthesis, bracket, quote, etc…
+   ;; over any automatically added closing parenthesis, bracket, quote, etcâ€¦
    ;; This can be temporary disabled by pressing `C-q' before `)'. (default nil)
    dotspacemacs-smart-closing-parenthesis t
    ;; Select a scope to highlight delimiters. Possible values are `any',
@@ -340,10 +341,10 @@ you should place your code here."
  '(evil-want-Y-yank-to-eol nil)
  '(package-selected-packages
    (quote
-    (dracula-theme helm-gitignore powerline spinner parent-mode highlight smartparens iedit anzu racket-mode faceup smeargle orgit magit-gitflow magit-popup ibuffer-projectile gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link evil-magit magit transient git-commit paredit flyspell-correct-popup git-gutter-fringe fringe-helper with-editor git-gutter diff-hl geiser vmd-mode stickyfunc-enhance srefactor disaster company-c-headers cmake-mode clang-format nadvice ob-sml sml-mode toml-mode racer f cargo rust-mode lv web-mode tagedit slim-mode scss-mode sass-mode pug-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data mmm-mode markdown-toc markdown-mode gh-md nix-mode hydra projectile helm-nixos-options flx s pkg-info epl evil goto-chg undo-tree dash company-nixos-options nixos-options bind-map bind-key packed helm avy helm-core async popup yaml-mode fstar-mode quick-peek utop tuareg caml ocp-indent merlin fsharp-mode company-quickhelp intero hlint-refactor hindent helm-hoogle haskell-snippets flycheck-haskell company-ghci company-ghc ghc haskell-mode company-cabal cmm-mode insert-shebang fish-mode company-shell org-projectile org-pomodoro alert log4e helm-company helm-c-yasnippet flyspell-correct-helm flycheck-pos-tip pos-tip company-statistics auto-yasnippet ac-ispell unfill org-category-capture org-present gntp org-mime org-download mwim htmlize gnuplot fuzzy flyspell-correct flycheck company yasnippet auto-dictionary auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump diminish define-word column-enforce-mode clean-aindent-mode auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line))))
+    (web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor multiple-cursors js2-mode js-doc company-tern dash-functional tern coffee-mode dracula-theme helm-gitignore powerline spinner parent-mode highlight smartparens iedit anzu racket-mode faceup smeargle orgit magit-gitflow magit-popup ibuffer-projectile gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link evil-magit magit transient git-commit paredit flyspell-correct-popup git-gutter-fringe fringe-helper with-editor git-gutter diff-hl geiser vmd-mode stickyfunc-enhance srefactor disaster company-c-headers cmake-mode clang-format nadvice ob-sml sml-mode toml-mode racer f cargo rust-mode lv web-mode tagedit slim-mode scss-mode sass-mode pug-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data mmm-mode markdown-toc markdown-mode gh-md nix-mode hydra projectile helm-nixos-options flx s pkg-info epl evil goto-chg undo-tree dash company-nixos-options nixos-options bind-map bind-key packed helm avy helm-core async popup yaml-mode fstar-mode quick-peek utop tuareg caml ocp-indent merlin fsharp-mode company-quickhelp intero hlint-refactor hindent helm-hoogle haskell-snippets flycheck-haskell company-ghci company-ghc ghc haskell-mode company-cabal cmm-mode insert-shebang fish-mode company-shell org-projectile org-pomodoro alert log4e helm-company helm-c-yasnippet flyspell-correct-helm flycheck-pos-tip pos-tip company-statistics auto-yasnippet ac-ispell unfill org-category-capture org-present gntp org-mime org-download mwim htmlize gnuplot fuzzy flyspell-correct flycheck company yasnippet auto-dictionary auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump diminish define-word column-enforce-mode clean-aindent-mode auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((((min-colors 16777216)) (:background "#282a36" :foreground "#f8f8f2")) (t (:background "#000000" :foreground "#f8f8f2")))))

@@ -27,6 +27,7 @@ values."
    dotspacemacs-configuration-layer-path '()
    dotspacemacs-configuration-layers
    '(
+     html
      javascript
      sml
      ocaml

@@ -1,5 +1,5 @@
-*~
-*
+/*
+!/script
 .config/
 !.config/Code\ -\ OSS/User/settings.json
 .idris/

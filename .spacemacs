@@ -36,6 +36,7 @@ values."
      emacs-lisp
      scheme
      racket
+     ;; c-c++
      shell-scripts
      git
      ;; html
@@ -51,7 +52,6 @@ values."
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
-
      )
    dotspacemacs-additional-packages '(
                                       dracula-theme
@@ -110,7 +110,7 @@ values."
    ;; Specify the startup banner. Default value is `official', it displays
    ;; the official spacemacs logo. An integer value is the index of text
    ;; banner, `random' chooses a random text banner in `core/banners'
-   ;; directory. A string value must be a path to an image format supported
+   ;; directory. A string value must bep a path to an image format supported
    ;; by your Emacs build.
    ;; If the value is nil then no banner is displayed. (default 'official)
    dotspacemacs-startup-banner 'random
@@ -268,7 +268,7 @@ values."
    dotspacemacs-folding-method 'evil
    ;; If non-nil smartparens-strict-mode will be enabled in programming modes.
    ;; (default nil)
-   dotspacemacs-smartparens-strict-mode t
+   dotspacemacs-smartparens-strict-mode nil
    ;; If non-nil pressing the closing parenthesis `)' key in insert mode passes
    ;; over any automatically added closing parenthesis, bracket, quote, etcâ€¦
    ;; This can be temporary disabled by pressing `C-q' before `)'. (default nil)

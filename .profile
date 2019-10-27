@@ -1,10 +1,5 @@
-# ~/.opam/opam-init/variables.fish
-export OPAM_SWITCH_PREFIX='/home/iov/.opam/default'
-export CAML_LD_LIBRARY_PATH='/usr/lib/ocaml/stublibs:/usr/lib/ocaml'
-export CAML_LD_LIBRARY_PATH='/home/iov/.opam/default/lib/stublibs':"$CAML_LD_LIBRARY_PATH"
-export OCAML_TOPLEVEL_PATH='/home/iov/.opam/default/lib/toplevel'
-export PATH="$HOME/.opam/default/bin":"$HOME/.local/bin":"$HOME/.yarn/bin":$PATH
-
+export PATH="$HOME/.local/bin":"$HOME/.yarn/bin":$PATH
+export MANPATH="/usr/man":"/usr/share/man":"/usr/local/man":"/usr/local/share/man"
 # Mirrors
 
 # Pipenv

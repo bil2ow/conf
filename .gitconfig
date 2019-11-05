@@ -10,10 +10,15 @@
 	protocol = git
 [core]
 	autocrlf = input
-	editor = emacs
+	editor = emacsclient -c
 [http]
     proxy = http://127.0.0.1:1081
 [credential]
 	helper = cache --timeout=604800
 # [commit]
 # 	gpgSign = true
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

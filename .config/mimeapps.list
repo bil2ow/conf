@@ -1,5 +1,5 @@
 [Added Associations]
-application/epub+zip=calibre-ebook-viewer.desktop;firefox.desktop;chromium.desktop;sigil.desktop;
+application/epub+zip=calibre-ebook-viewer.desktop;firefox.desktop;chromium.desktop;sigil.desktop;org.gnome.Evince.desktop;
 application/musepack=netease-cloud-music.desktop;
 application/pdf=chromium.desktop;calibre-ebook-viewer.desktop;
 application/rss+xml=userapp-Thunderbird-UYU10Z.desktop;
@@ -60,12 +60,13 @@ x-scheme-handler/news=userapp-Thunderbird-09T00Z.desktop;
 x-scheme-handler/nntp=userapp-Thunderbird-09T00Z.desktop;
 x-scheme-handler/snews=userapp-Thunderbird-09T00Z.desktop;
 text/plain=org.gnome.gedit.desktop;typora.desktop;deepin-editor.desktop;
-application/json=code-oss.desktop;
+application/json=org.gnome.gedit.desktop;code-oss.desktop;
 application/xhtml+xml=firefox.desktop;
 text/markdown=typora.desktop;code-oss.desktop;
+text/x-chdr=org.gnome.gedit.desktop;
 
 [Default Applications]
-application/epub+zip=sigil.desktop
+application/epub+zip=org.gnome.Evince.desktop
 application/musepack=netease-cloud-music.desktop
 application/pdf=calibre-ebook-viewer.desktop
 application/rss+xml=userapp-Thunderbird-UYU10Z.desktop
@@ -109,13 +110,13 @@ image/x-xbitmap=deepin-image-viewer.desktop
 image/x-xpixmap=deepin-image-viewer.desktop
 message/rfc822=userapp-Thunderbird-4Z2W0Z.desktop
 text/html=firefox.desktop
-text/plain=code-oss.desktop
-text/x-c++src=code-oss.desktop
-text/x-csrc=code-oss.desktop
-text/x-java=code-oss.desktop
-text/x-matlab=code-oss.desktop
-text/xhtml+xml=firefox.desktop
-text/xhtml_xml=firefox.desktop
+text/plain=org.gnome.gedit.desktop
+text/x-c++src=org.gnome.gedit.desktop
+text/x-csrc=org.gnome.gedit.desktop
+text/x-java=org.gnome.gedit.desktop
+text/x-matlab=org.gnome.gedit.desktop
+text/xhtml+xml=org.gnome.gedit.desktop
+text/xhtml_xml=org.gnome.gedit.desktop
 text/xml=firefox.desktop
 video/webm=firefox.desktop
 x-scheme-handler/chrome=firefox.desktop

@@ -1,7 +1,7 @@
 [user]
-	name = The Colour Out of Space
+	name = billow
 	email = billow.fun@gmail.com
-	signingkey = 6174C79E66C3F8939775BD07640B2328CF13DF28
+	signingkey = 603F70632BFEE500985451C4A3FC7AFAF1932697
 [url "https://github.com/"]
 	insteadOf = git://github.com/
 [url "https://gitlab.com/"]
@@ -10,15 +10,15 @@
 	protocol = git
 [core]
 	autocrlf = input
-	editor = emacsclient -c
+	editor = gedit
 [http]
-    proxy = http://127.0.0.1:1081
+    proxy = http://192.168.1.3:7890
 [credential]
 	helper = cache --timeout=604800
-# [commit]
-# 	gpgSign = true
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+[commit]
+	gpgsign = true

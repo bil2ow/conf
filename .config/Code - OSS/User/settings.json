@@ -17,5 +17,6 @@
     "editor.wordWrapColumn": 120,
     "editor.formatOnSave": true,
     "C_Cpp.clang_format_path": "/usr/bin/clang-format",
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "window.zoomLevel": 1
 }

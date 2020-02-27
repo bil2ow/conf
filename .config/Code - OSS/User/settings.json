@@ -1,7 +1,7 @@
 {
     "editor.fontLigatures": true,
     "window.titleBarStyle": "custom",
-    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'Jetbrains Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "explorer.confirmDelete": false,
     "files.autoSave": "onFocusChange",
     "editor.formatOnPaste": true,
@@ -12,7 +12,7 @@
     "editor.wordWrap": "wordWrapColumn",
     "git.confirmSync": false,
     "git.autofetch": true,
-    "editor.fontSize": 13,
+    "editor.fontSize": 14,
     "editor.renderWhitespace": "boundary",
     "editor.wordWrapColumn": 120,
     "editor.formatOnSave": true,

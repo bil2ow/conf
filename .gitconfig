@@ -1,10 +1,9 @@
 [core]
 	autocrlf = true
-	eol = lf
 [user]
 	name = iovw
 	email = billow.fun@gmail.com
-	signingkey = 8A87D7B61C5331554DEB84E441BF13F3E7E9D58E
+	signingkey = 603F70632BFEE500985451C4A3FC7AFAF1932697
 [commit]
 	gpgsign = true
 [url "https://github.com/"]

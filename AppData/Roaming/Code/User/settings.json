@@ -1,7 +1,7 @@
 {
     "editor.suggestSelection": "first",
     "explorer.confirmDragAndDrop": false,
-    "editor.fontFamily": "'Source Code Pro','Fira Code', 'Droid Sans Mono', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'JetBrains Mono','Fira Code', 'Droid Sans Mono', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "extensions.ignoreRecommendations": false,
@@ -13,7 +13,7 @@
     "explorer.confirmDelete": false,
     "git.autofetch": true,
     "liveServer.settings.donotShowInfoMsg": true,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "terminal.integrated.shell.linux": "/usr/bin/fish",
     "C_Cpp.clang_format_sortIncludes": true,
     "[c]": {
@@ -32,5 +32,7 @@
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "git.confirmSync": false,
-    "python.pythonPath": "C:\\ProgramData\\Miniconda3\\python.exe",
+    "python.pythonPath": "C:\\Users\\starr\\.virtualenvs\\DotGraph-zJnZsBxA\\Scripts\\python.exe",
+    "git.enableSmartCommit": true,
+    "editor.wordWrap": "on",
 }

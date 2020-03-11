@@ -18,5 +18,7 @@
     "editor.formatOnSave": true,
     "C_Cpp.clang_format_path": "/usr/bin/clang-format",
     "git.enableSmartCommit": true,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "http.proxyStrictSSL": false,
+    "http.proxy": "http://192.168.1.6:7890"
 }

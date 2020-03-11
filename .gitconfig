@@ -2,17 +2,11 @@
 	name = billow
 	email = billow.fun@gmail.com
 	signingkey = 603F70632BFEE500985451C4A3FC7AFAF1932697
-[url "https://github.com/"]
-	insteadOf = git://github.com/
-[url "https://gitlab.com/"]
-	insteadOf = git://gitlab.com/
 [hub]
 	protocol = git
 [core]
 	autocrlf = input
-    editor = emacs
-[http]
-    proxy = http://192.168.1.3:7890
+	editor = "emacsclient -nw"
 [credential]
 	helper = cache --timeout=604800
 [filter "lfs"]
@@ -22,3 +16,5 @@
 	clean = git-lfs clean -- %f
 [commit]
 	gpgsign = true
+[http]
+	proxy = "socks5://192.168.1.6:7891"

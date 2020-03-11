@@ -1,4 +1,6 @@
-export PATH="$HOME/.local/bin":"$HOME/.yarn/bin":$PATH
+export GEM_USER_HOME="$HOME/.gem/ruby/2.7.0"
+
+export PATH="$HOME/.local/bin":"$HOME/.yarn/bin":"$GEM_USER_HOME/bin":$PATH
 export MANPATH="/usr/man":"/usr/share/man":"/usr/local/man":"/usr/local/share/man"
 
 # Pipenv

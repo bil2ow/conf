@@ -2,7 +2,7 @@
 application/epub+zip=calibre-ebook-viewer.desktop;firefox.desktop;chromium.desktop;sigil.desktop;org.gnome.Evince.desktop;
 application/json=org.gnome.gedit.desktop;code-oss.desktop;
 application/musepack=netease-cloud-music.desktop;
-application/pdf=chromium.desktop;calibre-ebook-viewer.desktop;
+application/pdf=org.kde.okular.desktop;chromium.desktop;calibre-ebook-viewer.desktop;
 application/rss+xml=userapp-Thunderbird-UYU10Z.desktop;
 application/vnd.ms-publisher=code-oss.desktop;
 application/wps-office.doc=wps-office-wps.desktop;
@@ -69,7 +69,7 @@ x-scheme-handler/snews=userapp-Thunderbird-09T00Z.desktop;
 application/epub+zip=org.gnome.Evince.desktop
 application/lrf=calibre-lrfviewer.desktop
 application/musepack=netease-cloud-music.desktop
-application/pdf=calibre-ebook-viewer.desktop
+application/pdf=org.kde.okular.desktop;
 application/rss+xml=userapp-Thunderbird-UYU10Z.desktop
 application/vnd.ms-publisher=code-oss.desktop;
 application/wps-office.doc=wps-office-wps.desktop

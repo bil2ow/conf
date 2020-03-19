@@ -1,6 +1,15 @@
-export GEM_USER_HOME="$HOME/.gem/ruby/2.7.0"
+export ANDROID_SDK_HOME="$HOME/Android/Sdk"
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-export PATH="$HOME/.local/bin":"$HOME/.yarn/bin":"$GEM_USER_HOME/bin":$PATH
+export GEM_USER_HOME="$HOME/.gem/ruby/2.7.0"
+export PATH=$PATH:$GEM_USER_HOME/bin
+
+export PATH=$PATH:"$HOME/.local/bin":"$HOME/.yarn/bin"
+
 export MANPATH="/usr/man":"/usr/share/man":"/usr/local/man":"/usr/local/share/man"
 
 # Pipenv

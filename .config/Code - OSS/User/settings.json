@@ -20,5 +20,14 @@
     "git.enableSmartCommit": true,
     "window.zoomLevel": 1,
     "http.proxyStrictSSL": false,
-    "http.proxy": "http://192.168.1.6:7890"
+    "http.proxy": "http://192.168.1.6:7890",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "sync.autoDownload": true,
+    "sync.autoUpload": true,
+    "sync.quietSync": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "eslint.packageManager": "yarn",
 }

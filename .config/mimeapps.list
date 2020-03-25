@@ -134,6 +134,7 @@ x-scheme-handler/nntp=userapp-Thunderbird-09T00Z.desktop
 x-scheme-handler/postman=Postman.desktop
 x-scheme-handler/snews=userapp-Thunderbird-09T00Z.desktop
 x-scheme-handler/unknown=google-chrome.desktop
+x-scheme-handler/figma=figma-linux.desktop
 
 [Removed Associations]
 text/x-c++hdr=rstudio.desktop;

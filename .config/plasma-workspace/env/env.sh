@@ -29,4 +29,8 @@ export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub/"
 # Flutter
 export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter"
 
+export all_proxy=socks5://192.168.1.6:7891
+export ALL_PROXY=$all_proxy
+export HTTP_PROXY=$all_proxy
+export HTTPS_PROXY=$all_proxy
 export no_proxy="localhost,127.0.0.1,aur.tuna.tsinghua.edu.cn"

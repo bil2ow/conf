@@ -29,5 +29,9 @@
     "eslint.format.enable": true,
     "eslint.lintTask.enable": true,
     "eslint.packageManager": "yarn",
-    "workbench.colorTheme": "Atom One Dark",
+    "workbench.colorTheme": "One Dark Pro",
+    "cSpell.enableFiletypes": [
+        "fsharp"
+    ],
+    "FSharp.useSdkScripts": true,
 }

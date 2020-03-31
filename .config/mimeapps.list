@@ -64,6 +64,7 @@ x-scheme-handler/https=chromium.desktop;firefox.desktop;
 x-scheme-handler/news=userapp-Thunderbird-09T00Z.desktop;
 x-scheme-handler/nntp=userapp-Thunderbird-09T00Z.desktop;
 x-scheme-handler/snews=userapp-Thunderbird-09T00Z.desktop;
+application/octet-stream=code-oss.desktop;wine-extension-txt.desktop;
 
 [Default Applications]
 application/epub+zip=org.gnome.Evince.desktop

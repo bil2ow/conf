@@ -25,7 +25,7 @@
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
     "editor.wordWrap": "on",
-    "http.proxy": "http://127.0.0.1:7892",
+    "http.proxy": "http://192.168.1.6:7890",
     "FSharp.suggestGitignore": false,
     "FSharp.useSdkScripts": true,
     "editor.tabCompletion": "on",
@@ -35,4 +35,5 @@
     "todo-tree.tree.showScanModeButton": false,
     "better-comments.highlightPlainText": true,
     "merge-conflict.autoNavigateNextConflict.enabled": true,
+    "java.dependency.showMembers": true,
 }

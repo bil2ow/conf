@@ -1,6 +1,8 @@
 [user]
-	name = billow
-	email = billow.fun@gmail.com
+	# name = billow
+	# email = billow.fun@gmail.com
+	name = me
+	email = ai@ai.ai
 	signingkey = 603F70632BFEE500985451C4A3FC7AFAF1932697
 [hub]
 	protocol = git
@@ -15,6 +17,6 @@
 	required = true
 	clean = git-lfs clean -- %f
 [commit]
-	gpgsign = true
+	gpgsign = false
 [http]
 	proxy = "socks5://192.168.1.6:7891"

@@ -1,3 +1,4 @@
+# Android SDK
 export ANDROID_SDK_HOME="$HOME/Android/Sdk"
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -5,10 +6,18 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+# Ruby Gem
 export GEM_USER_HOME="$HOME/.gem/ruby/2.7.0"
 export PATH=$PATH:$GEM_USER_HOME/bin
 
-export PATH=$PATH:"$HOME/.local/bin":"$HOME/.yarn/bin"
+# Node Yarn
+export PATH=$PATH:"$HOME/.yarn/bin"
+
+# Rust Cargo
+export PATH=$PATH:"$HOME/.cargo/bin"
+
+# Local
+export PATH=$PATH:"$HOME/.local/bin"
 
 export MANPATH="/usr/man":"/usr/share/man":"/usr/local/man":"/usr/local/share/man"
 

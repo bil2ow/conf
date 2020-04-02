@@ -1,8 +1,6 @@
 [user]
-	# name = billow
-	# email = billow.fun@gmail.com
-	name = me
-	email = ai@ai.ai
+	name = billow
+	email = billow.fun@gmail.com
 	signingkey = 603F70632BFEE500985451C4A3FC7AFAF1932697
 [hub]
 	protocol = git
